@@ -8,5 +8,18 @@ header{
 
 }
 
+.hero-container{
+    display: flex;
+    margin-top: 45vh;
+}
 
+.hero-left-container{
+    margin-left: 5%;
+    display: flex;
+    gap: 20rem;
+    }
 
+.hero-carousel-container{
+    margin-right: 5%;
+    margin-left: auto;
+}

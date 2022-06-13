@@ -1,0 +1,9 @@
+.about-images-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    margin-inline: 5%;
+    .about-img{
+        width: 100%;
+    }
+}

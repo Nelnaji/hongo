@@ -10200,4 +10200,30 @@ header {
   width: 100%;
 }
 
+.hero-container {
+  display: flex;
+  margin-top: 45vh;
+}
+
+.hero-left-container {
+  margin-left: 5%;
+  display: flex;
+  gap: 20rem;
+}
+
+.hero-carousel-container {
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+.about-images-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-inline: 5%;
+}
+.about-images-container .about-img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
