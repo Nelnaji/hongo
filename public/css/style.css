@@ -10216,6 +10216,22 @@ header {
   margin-left: auto;
 }
 
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.socials-container .hero-socials-icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.socials-container .social-text {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+}
+
 .about-images-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

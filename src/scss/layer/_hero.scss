@@ -23,3 +23,21 @@ header{
     margin-right: 5%;
     margin-left: auto;
 }
+
+.socials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    .hero-socials-icon-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+       
+    }
+    .social-text{
+        writing-mode: vertical-rl;
+transform: scale(-1);
+    }
+
+}
