@@ -1,43 +1,98 @@
-header{
-    
-    background-image: url(../img/collect/one-page-slider-01.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    width: 100%;
-
+header {
+  background-image: url(../img/collect/one-page-slider-01.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-container{
-    display: flex;
-    margin-top: 45vh;
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
 }
 
-.hero-left-container{
-    margin-left: 5%;
-    display: flex;
-    gap: 20rem;
-    }
-
-.hero-carousel-container{
-    margin-right: 5%;
-    margin-left: auto;
+.hero-left-container {
+  margin-left: 5%;
+  margin-top: 25rem;
 }
 
-.socials-container{
+.hero-carousel-container {
+  margin-right: 5%;
+  margin-left: auto;
+  margin-top: 20rem;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  .hero-socials-icon-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    .hero-socials-icon-container{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-       
-    }
-    .social-text{
-        writing-mode: vertical-rl;
-transform: scale(-1);
-    }
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    color: $clr-t-primary;
+  }
+  .social-text {
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+    font-size: 1.2rem;
+    color: $clr-t-secondary;
+  }
+}
 
+.carousel {
+  font-size: 1.4rem;
+  margin: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary-heading {
+  margin-top: 1rem;
+  font-size: 4rem;
+  line-height: 3.8rem;
+  color: $clr-t-primary;
+}
+
+.hero-division-container {
+  width: 30%;
+  margin-top: 20rem;
+}
+
+.big-title {
+  color: $white;
+  position: absolute;
+  font-size: 20rem;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.primary-heading-price {
+  font-size: 1.6rem;
+  padding: 2rem 0;
+  .old-price {
+    text-decoration: line-through;
+  }
+}
+
+.primary-heading-top {
+  color: $clr-t-primary;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.primary-heading-sub {
+  padding-top: 2rem;
+  width: 60%;
+  color: $clr-t-secondary;
+  font-size: 1.1rem;
 }
