@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 * {
   box-sizing: inherit;
   margin: 0;
@@ -8211,7 +8212,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype");
 }
 .fas,
 .fa-solid {
@@ -8233,7 +8234,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype");
 }
 .fab,
 .fa-brands {
@@ -10139,12 +10140,64 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype");
+  src: url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"), url("../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype");
 }
 .far,
 .fa-regular {
   font-family: "Font Awesome 6 Free";
   font-weight: 400;
+}
+
+.btn {
+  border: none;
+  background-color: hsl(120deg, 1%, 20%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  border-bottom: 1px solid hsl(33deg, 11%, 81%);
+}
+
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 5%;
+  padding: 1.4rem;
+}
+.main-nav-container .main-nav-link-container {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+.main-nav-container .main-nav-link-container .main-nav-link:visited, .main-nav-container .main-nav-link-container .main-nav-link:link {
+  text-decoration: none;
+  color: hsl(120deg, 2%, 11%);
+  text-transform: uppercase;
+}
+.main-nav-container .main-nav-icon-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+.main-nav-container .main-nav-icon-container .main-nav-icon-link:visited, .main-nav-container .main-nav-icon-container .main-nav-icon-link:link {
+  color: hsl(120deg, 2%, 11%);
+}
+
+header {
+  background-image: url(../img/collect/one-page-slider-01.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

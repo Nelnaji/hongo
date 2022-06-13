@@ -1,0 +1,50 @@
+
+// Color variables
+// $clr-primary : hsl(29, 79%, 95%);
+// $white : hsl(0, 0%, 100%);
+// $clr-footer : hsl(0, 0%, 14%);
+// $clr-last-footer : hsl(120, 2%, 11%);
+
+// $clr-grey : hsl(33, 11%, 81%);
+
+
+// $clr-t-primary : hsl(120, 1%, 20%);
+// $clr-t-secondary: hsl(33, 11%, 81%);
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+    border-bottom: 1px solid $clr-grey;
+}
+.main-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 5%;
+    padding: 1.4rem;
+   
+    .main-nav-link-container{
+        display: flex;
+        gap: 2rem;
+        font-size: 1.4rem;
+        .main-nav-link:visited,.main-nav-link:link{
+            text-decoration: none;
+            color: $clr-last-footer;
+            text-transform: uppercase;
+        }
+     
+    }
+    .main-nav-icon-container{
+        display: flex;
+        gap: 1rem;
+        font-size: 1.4rem;
+        .main-nav-icon-link:visited,.main-nav-icon-link:link{
+            color: $clr-last-footer;
+
+        }
+    }
+}
+
