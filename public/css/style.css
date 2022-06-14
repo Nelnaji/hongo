@@ -10579,12 +10579,11 @@ footer {
 
 .email-input {
   display: flex;
-  background-color: hsl(0deg, 0%, 15%);
   color: hsl(0deg, 0%, 64%);
-  padding: 3rem;
+  padding: 3rem 0rem;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(61, 61, 61);
+  margin-inline: 10%;
 }
 
 .newsletter-container {
@@ -10617,7 +10616,8 @@ footer {
   background-color: #303030;
   padding: 1rem 2rem;
 }
-.submit-footer-container .emailing-list, .submit-footer-container .btn-emailing-list {
+.submit-footer-container .emailing-list,
+.submit-footer-container .btn-emailing-list {
   background-color: transparent;
   border: none;
   color: hsl(0deg, 0%, 64%);
@@ -10631,8 +10631,13 @@ footer {
 
 .main-footer {
   display: flex;
-  gap: 2rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 6rem 0;
+  margin-inline: 10%;
+  color: hsl(0deg, 0%, 64%);
+}
+
+.main-footer-container {
   background-color: hsl(0deg, 0%, 15%);
 }
 
@@ -10648,8 +10653,35 @@ footer {
   width: 100%;
 }
 
-.last-footer {
+.sub-main-footer-1 {
+  width: 30%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links a:visited,
+.footer-links a:link {
+  color: hsl(0deg, 0%, 64%);
+  text-decoration: none;
+}
+
+.last-footer-container {
   background-color: hsl(120deg, 2%, 11%);
+}
+
+.last-footer {
+  margin-inline: 10%;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(0deg, 0%, 64%);
+  padding: 1rem 0rem;
+}
+
+.email-input-container {
+  border-bottom: 1px solid rgb(61, 61, 61);
+  background-color: hsl(0deg, 0%, 15%);
 }
 
 /*# sourceMappingURL=style.css.map */
