@@ -10496,7 +10496,7 @@ header {
   gap: 2rem;
 }
 .contact-container .contact-form {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/fashion/fashion-brand-parallax-bg.jpg);
+  background-image: radial-gradient(rgba(65, 57, 57, 0.427), rgba(0, 0, 0, 0.8)), url(../img/fashion/fashion-brand-parallax-bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -10537,11 +10537,119 @@ header {
 .contact-form form label {
   color: hsl(0deg, 0%, 64%);
 }
-
-.contact-form-title {
+.contact-form form input[type=email], .contact-form form input[type=name], .contact-form form input[type=subject], .contact-form form input[type=textarea] {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid hsl(0deg, 0%, 64%);
+  width: 100%;
+  margin-bottom: 1rem;
   color: hsl(0deg, 0%, 100%);
-  font-size: 1.4rem;
+}
+.contact-form form input[type=submit] {
+  margin-top: 2rem;
+  border-radius: 0rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+.contact-form .contact-form-title {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.instagram-div {
+  display: flex;
+  background-color: hsl(0deg, 0%, 100%);
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+  justify-content: center;
+  align-items: center;
+}
+.instagram-div h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input {
+  display: flex;
+  background-color: hsl(0deg, 0%, 15%);
+  color: hsl(0deg, 0%, 64%);
+  padding: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(61, 61, 61);
+}
+
+.newsletter-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.newsletter-container .text-newsletter {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.socials-footer-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.3rem;
+}
+.socials-footer-container .text-socials-footer {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.socials-footer-container .socials-footer {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.submit-footer-container {
+  background-color: #303030;
+  padding: 1rem 2rem;
+}
+.submit-footer-container .emailing-list, .submit-footer-container .btn-emailing-list {
+  background-color: transparent;
+  border: none;
+  color: hsl(0deg, 0%, 64%);
+  font-weight: 600;
+}
+.submit-footer-container .btn-emailing-list {
+  font-size: 1.1rem;
+  padding-left: 3rem;
+  padding-right: 0.6rem;
+}
+
+.main-footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+.main-footer-picture-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.main-footer-picture-grid .image-container-footer {
+  width: 5rem;
+}
+.main-footer-picture-grid .image-footer-grid {
+  width: 100%;
+}
+
+.last-footer {
+  background-color: hsl(120deg, 2%, 11%);
 }
 
 /*# sourceMappingURL=style.css.map */
