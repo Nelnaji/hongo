@@ -1,0 +1,37 @@
+.latest-blog-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-inline: 5%;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+
+.latest-blog-card{
+     display: flex;
+    flex-direction: column;
+   
+    .btn-blog{
+        margin: 3rem 0;
+        align-self: start;
+    }
+.blog-card-text{
+    font-size: 1.4rem;
+    width: 80%;
+    padding-bottom: 1rem;
+    color: $clr-t-primary;
+}
+.blog-card-name{
+    color: $clr-t-secondary;
+    font-size: 1.2rem;
+}
+} 
+}
+
+
+.latest-blog-img{
+    width: 100%;
+}
+
+.latest-blog{
+    padding-top:5rem ;
+}

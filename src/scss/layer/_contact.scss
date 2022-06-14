@@ -1,0 +1,66 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    .img-contact-left{
+    background-image: url(../img/collect/one-page-img-04.jpg);
+    background-size: cover;
+    background-position: center left;
+  }
+.information{
+    background-color: $clr-primary;
+    padding: 15rem 15rem 15rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+  .contact-form{
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/fashion/fashion-brand-parallax-bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.information-sub{
+    display: flex;
+gap: 3rem;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.sub-information-title{
+    color: $clr-t-primary;
+    
+    font-weight: 500;
+    padding-bottom: .5rem;
+}
+
+.sub-information-text{
+    color: $clr-t-secondary;
+    font-size: 1.1rem;
+}
+
+.information-sub-icon{
+    font-size: 1.6rem;
+    color: $clr-t-primary;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        label{
+            color: $clr-t-secondary;
+
+        }
+    }
+}
+
+.contact-form-title{
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 500;
+}

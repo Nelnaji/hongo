@@ -1,0 +1,35 @@
+.latest-styles{
+    background-color: $clr-primary;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    margin-inline: auto;
+}
+.img-latest-styles{
+    width: 40%;
+}
+
+
+
+.latest-style-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 28%;
+    margin-right: 5rem;
+    .btn{
+        align-self: start;
+    }
+}
+.latest-style-main-title{
+    color: $clr-t-primary;
+    font-weight: 500;
+}
+.latest-style-first-paragraphe,.latest-style-second-paragraphe{
+
+    color: $clr-t-secondary;
+    
+}
+
