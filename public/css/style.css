@@ -10167,11 +10167,13 @@ readers do not read off random characters that represent icons */
   gap: 1rem;
   margin: 4rem;
 }
-.primary-section-title-container .primary-section-title {
+
+.primary-section-title {
   font-weight: 400;
   color: hsl(120deg, 1%, 20%);
 }
-.primary-section-title-container .primary-section-text-title {
+
+.primary-section-text-title {
   width: 60%;
   color: hsl(0deg, 0%, 64%);
 }
@@ -10397,6 +10399,52 @@ header {
   color: hsl(0deg, 0%, 64%);
 }
 
+.recent-products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-inline: 5%;
+  padding: 2rem 0 4rem 0;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card-img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.product-price {
+  color: hsl(0deg, 0%, 64%);
+}
+
+.absolute-container {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.661);
+  height: 3rem;
+  width: 100%;
+  margin-inline: auto;
+  top: -130%;
+}
+
+.show {
+  display: block;
+}
+
+.name-price-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .latest-blog-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -10442,7 +10490,8 @@ header {
 }
 .testimonials-container .testimonials-grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-columns: 0.1fr 3fr 3fr 3fr 0.1fr;
+  place-items: center;
   gap: 2rem;
 }
 
@@ -10477,6 +10526,15 @@ header {
 
 .testimonials-card-text {
   color: hsl(0deg, 0%, 64%);
+}
+
+.carousel-icon {
+  font-size: 4rem;
+  color: hsl(120deg, 1%, 20%);
+}
+
+.carousel-icon:hover {
+  cursor: pointer;
 }
 
 .contact-container {

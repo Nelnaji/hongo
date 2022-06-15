@@ -7,8 +7,10 @@
     align-items: center;
     .testimonials-grid-container{
         display: grid;
-        grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+        grid-template-columns: .1fr 3fr 3fr 3fr .1fr ;
+        place-items: center;
         gap: 2rem;
+      
     }
  }
 
@@ -45,3 +47,10 @@
     color: $clr-t-secondary;
 }
 
+.carousel-icon{
+    font-size: 4rem;
+    color: $clr-t-primary;
+}
+.carousel-icon:hover{
+    cursor: pointer;
+}

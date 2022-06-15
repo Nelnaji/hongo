@@ -16,13 +16,15 @@
     align-items: center;
     gap: 1rem;
     margin: 4rem;
-    .primary-section-title{
-        font-weight: 400 ;
-        color: $clr-t-primary;
-    }    
-    .primary-section-text-title{
-        width: 60%;
-        color: $clr-t-secondary;
-    }
+ 
     
+}
+
+.primary-section-title{
+    font-weight: 400 ;
+    color: $clr-t-primary;
+}    
+.primary-section-text-title{
+    width: 60%;
+    color: $clr-t-secondary;
 }

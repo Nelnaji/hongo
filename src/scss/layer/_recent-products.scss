@@ -1,0 +1,49 @@
+.recent-products-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    margin-inline: 5%;
+    padding: 2rem 0 4rem 0;
+    
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.product-card-img{
+    width: 100%;
+    padding: 1rem;
+   
+  }
+
+
+.product-price{
+    color: $clr-t-secondary;
+}
+
+.absolute-container{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.661);
+    height: 3rem;
+    width: 100%;
+   margin-inline: auto;
+    top: -130%;
+    }
+
+.show{
+    display: block;
+}
+
+.name-price-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
