@@ -10583,7 +10583,7 @@ footer {
   padding: 3rem 0rem;
   align-items: center;
   justify-content: space-between;
-  margin-inline: 10%;
+  margin-inline: 15%;
 }
 
 .newsletter-container {
@@ -10633,7 +10633,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 6rem 0;
-  margin-inline: 10%;
+  margin-inline: 15%;
   color: hsl(0deg, 0%, 64%);
 }
 
@@ -10654,7 +10654,11 @@ footer {
 }
 
 .sub-main-footer-1 {
-  width: 30%;
+  width: 25%;
+}
+
+.main-footer-text {
+  font-size: 1.1rem;
 }
 
 .footer-links {
@@ -10665,6 +10669,8 @@ footer {
 .footer-links a:link {
   color: hsl(0deg, 0%, 64%);
   text-decoration: none;
+  padding-bottom: 0.3rem;
+  font-size: 1.1rem;
 }
 
 .last-footer-container {
@@ -10672,16 +10678,31 @@ footer {
 }
 
 .last-footer {
-  margin-inline: 10%;
+  margin-inline: 15%;
   display: flex;
   justify-content: space-between;
   color: hsl(0deg, 0%, 64%);
-  padding: 1rem 0rem;
+  padding: 2.4rem 0 1rem 0;
+  align-items: center;
+}
+.last-footer p {
+  font-size: 1.1rem;
 }
 
 .email-input-container {
   border-bottom: 1px solid rgb(61, 61, 61);
   background-color: hsl(0deg, 0%, 15%);
+}
+
+.main-footer-titles {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.footer-logo {
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
