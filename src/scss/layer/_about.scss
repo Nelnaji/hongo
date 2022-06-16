@@ -19,37 +19,34 @@
   }
 }
 
-
-.about-text-container{
+.about-text-container {
   display: flex;
-justify-content: center;
+  justify-content: center;
   gap: 2rem;
   padding: 8rem;
 }
 
-.about-text-subcontainer{
+.about-text-subcontainer {
   display: flex;
   flex-direction: column;
   width: 40%;
-  
 }
-.about-secondary-text{
+.about-secondary-text {
   color: $clr-t-secondary;
 }
 
-.about-main-text{
+.about-main-text {
   color: $clr-t-primary;
   font-size: 1.8rem;
   font-weight: 500;
-  
 }
 
-.sub-title{
+.sub-title {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-.about-text-subcontainer-2{
+.about-text-subcontainer-2 {
   width: 35%;
 }

@@ -1,4 +1,3 @@
-
 // Color variables
 // $clr-primary : hsl(29, 79%, 95%);
 // $white : hsl(0, 0%, 100%);
@@ -7,44 +6,73 @@
 
 // $clr-grey : hsl(33, 11%, 81%);
 
-
 // $clr-t-primary : hsl(120, 1%, 20%);
 // $clr-t-secondary: hsl(33, 11%, 81%);
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-
-nav{
-    border-bottom: 1px solid $clr-grey;
+nav {
+  border-bottom: 1px solid $clr-grey;
+  width: 100vw;
 }
-.main-nav-container{
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 5%;
+  padding: 1.4rem;
+
+  .main-nav-link-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-inline: 5%;
-    padding: 1.4rem;
-   
-    .main-nav-link-container{
-        display: flex;
-        gap: 2rem;
-        font-size: 1.4rem;
-        .main-nav-link:visited,.main-nav-link:link{
-            text-decoration: none;
-            color: $clr-last-footer;
-            text-transform: uppercase;
-        }
-     
+    gap: 2rem;
+    font-size: 1.4rem;
+    .main-nav-link:visited,
+    .main-nav-link:link {
+      text-decoration: none;
+      color: $clr-last-footer;
+      text-transform: uppercase;
     }
-    .main-nav-icon-container{
-        display: flex;
-        gap: 1rem;
-        font-size: 1.4rem;
-        .main-nav-icon-link:visited,.main-nav-icon-link:link{
-            color: $clr-last-footer;
-
-        }
+    .main-nav-link::after {
+      display: block;
+      content: "";
+      border-bottom: solid 1px $clr-t-primary;
+      transform: scaleX(0);
+      transition: transform 150ms ease-in-out;
     }
+    .main-nav-link:hover:after {
+      transform: scaleX(1);
+    }
+    .sticky-link:link,
+    .sticky-link:visited {
+      color: $white;
+    }
+    .sticky-link::after {
+      border-bottom: solid 1px $white;
+    }
+  }
+  .main-nav-icon-container {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+    .main-nav-icon-link:visited,
+    .main-nav-icon-link:link {
+      color: $clr-last-footer;
+    }
+    .sticky-icon:visited,
+    .sticky-icon:link {
+      color: $white;
+    }
+  }
 }
 
+// sticky Navigation
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 1000;
+  border-bottom: none;
+}
