@@ -10863,4 +10863,14 @@ footer {
   color: white;
 }
 
+.dark-mode {
+  background-color: hsl(120deg, 2%, 11%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.header-dark {
+  background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(../img/collect/one-page-slider-01.jpg);
+  color: hsl(0deg, 0%, 100%);
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -8,3 +8,18 @@
 .dark-mode-main-text {
   color: white;
 }
+
+.dark-mode {
+  background-color: $clr-last-footer;
+  color: $white;
+}
+
+.header-dark {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../img/collect/one-page-slider-01.jpg);
+
+  color: $white;
+}
