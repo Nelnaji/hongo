@@ -51,6 +51,13 @@ nav {
     .sticky-link::after {
       border-bottom: solid 1px $white;
     }
+    .dark-link:link,
+    .dark-link:visited {
+      color: $white;
+    }
+    .dark-link::after {
+      border-bottom: solid 1px $white;
+    }
   }
   .main-nav-icon-container {
     display: flex;
@@ -64,6 +71,10 @@ nav {
     .sticky-icon:link {
       color: $white;
     }
+    .dark-icon:visited,
+    .dark-icon:link {
+      color: $white;
+    }
   }
 }
 
@@ -75,4 +86,8 @@ nav {
   background-color: black;
   z-index: 1000;
   border-bottom: none;
+}
+
+.dark-nav {
+  background-color: black;
 }

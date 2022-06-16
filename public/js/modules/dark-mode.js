@@ -20,8 +20,25 @@ export const changeTheme = () => {
   const sectionOne = document.querySelector("header");
 
   btntheme.addEventListener("click", (e) => {
-    // change l'icone de theme dans la nav-bar
+    nav.classList.toggle("dark-nav");
+
+    //  changement de l'icone de la nav en dark mode.
+    if (navLogo.getAttribute("src") === "./public/img/logo.png") {
+      navLogo.src = "./public/img/white-logo.png";
+    } else if (navLogo.getAttribute("src") === "./public/img/white-logo.png") {
+      navLogo.src = "./public/img/logo.png";
+    }
+    // change icon colors
+    navIcons.forEach((icon) => {
+      icon.classList.toggle("dark-icon");
+    });
+    // change link colors
+    navLink.forEach((link) => {
+      link.classList.toggle("dark-link");
+    });
+
     if (e.target.classList[1] === "fa-moon") {
+      // changer l'icone de theme dans la nav-bar
       e.target.classList.remove("fa-moon");
       e.target.classList.add("fa-sun");
     } else if (e.target.classList[1] === "fa-sun") {
