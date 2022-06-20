@@ -10,13 +10,12 @@ header {
 .hero-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20rem;
+  justify-content: space-between;
 }
 
 .hero-left-container {
   margin-left: 5%;
-  margin-top: 25rem;
+  margin-top: 20rem;
 }
 
 .hero-carousel-container {
@@ -50,9 +49,8 @@ header {
 .carousel {
   font-size: 1.4rem;
   margin: 1rem;
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
+  transition: all 1s;
 }
 
 .primary-heading {
@@ -60,11 +58,6 @@ header {
   font-size: 4rem;
   line-height: 3.8rem;
   color: $clr-t-primary;
-}
-
-.hero-division-container {
-  width: 30%;
-  margin-top: 20rem;
 }
 
 .big-title {
@@ -96,4 +89,31 @@ header {
   width: 60%;
   color: $clr-t-secondary;
   font-size: 1.1rem;
+}
+
+// code pour le premier carousel
+
+.first-carousel {
+  width: 50vw;
+  height: 30vh;
+  position: relative;
+  margin-top: 20rem;
+  margin-left: 20rem;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.hero-division-container {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 30vw;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.carousel-active {
+  text-decoration: line-through;
 }
