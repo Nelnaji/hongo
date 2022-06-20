@@ -10582,7 +10582,7 @@ header {
 .slider {
   margin-inline: 10%;
   max-width: 90%;
-  height: 40vh;
+  height: 45vh;
   margin: 0 auto;
   position: relative;
   /* IN THE END */
@@ -10635,7 +10635,7 @@ header {
   top: 50%;
   z-index: 10;
   border: none;
-  background: rgba(116, 114, 114, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -10646,12 +10646,12 @@ header {
 }
 
 .slider__btn--left {
-  left: 0%;
+  left: 6%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 0%;
+  right: 6%;
   transform: translate(50%, -50%);
 }
 
