@@ -33,6 +33,7 @@ export const changeTheme = () => {
     } else if (navLogo.getAttribute("src") === "./public/img/white-logo.png") {
       navLogo.src = "./public/img/logo.png";
     }
+    console.log(navLogo.getAttribute("src"));
     // change icon colors
     navIcons.forEach((icon) => {
       icon.classList.toggle("dark-icon");

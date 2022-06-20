@@ -7,9 +7,9 @@ import { modalWindowChange } from "./modules/modal.js";
 
 // cette fonction créee la page recent products
 
+allNavMagic();
 createRecentProducts();
 changeTheme();
-allNavMagic();
 firstCarouselEngine();
 secondCarouselEngine();
 modalWindowChange();

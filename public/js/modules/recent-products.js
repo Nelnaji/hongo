@@ -124,7 +124,6 @@ export const createRecentProducts = () => {
     panierBtn.classList.add("fa-solid", "fa-cart-shopping");
 
     panierLikeContainer.classList.add("panier-container");
-    panierLikeContainer.classList.add("panier-container");
 
     panierLikeContainer.append(likeBtn);
     panierLikeContainer.append(panierBtn);

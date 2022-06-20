@@ -10326,6 +10326,7 @@ header {
   gap: 2rem;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 .socials-container .hero-socials-icon-container {
   display: flex;
@@ -10527,6 +10528,7 @@ header {
 .show i {
   font-size: 1.6rem;
   color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
 }
 
 .name-price-container {
@@ -10572,21 +10574,33 @@ header {
 }
 
 .testimonials-container {
-  padding: 10rem;
+  padding-top: 10rem;
   background-color: hsl(29deg, 79%, 95%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.testimonials-container .testimonials-grid-container {
-  display: grid;
-  grid-template-columns: 0.1fr 3fr 3fr 3fr 0.1fr;
-  place-items: center;
-  gap: 2rem;
 }
 
-.testimonial-text-container {
+/* SLIDER */
+.slider {
+  margin-inline: 10%;
+  max-width: 90%;
+  height: 40vh;
+  margin: 0 auto;
+  position: relative;
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+.slide .testimonial-text-container {
   background-color: hsl(0deg, 0%, 100%);
   padding: 3rem;
   border-radius: 0.8rem;
@@ -10594,38 +10608,56 @@ header {
   flex-direction: column;
   gap: 1rem;
 }
-
-.img-container {
+.slide .img-container {
   display: flex;
   gap: 2rem;
   align-items: center;
   padding: 2rem;
 }
-.img-container .img-testimonials {
+.slide .img-testimonials {
   border-radius: 50%;
   width: 20%;
 }
-.img-container .testimonials-job {
+.slide .testimonials-job {
   color: hsl(0deg, 0%, 64%);
 }
-
-.testimonials-card-title {
+.slide .testimonials-card-title {
   font-weight: 500;
   text-transform: uppercase;
   color: hsl(120deg, 1%, 20%);
 }
-
-.testimonials-card-text {
+.slide .testimonials-card-text {
   color: hsl(0deg, 0%, 64%);
 }
 
-.carousel-icon {
-  font-size: 4rem;
-  color: hsl(120deg, 1%, 20%);
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  background: rgba(116, 114, 114, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
 }
 
-.carousel-icon:hover {
-  cursor: pointer;
+.slider__btn--left {
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 0%;
+  transform: translate(50%, -50%);
+}
+
+.subslide {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-container {

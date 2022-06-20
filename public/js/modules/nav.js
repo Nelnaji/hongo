@@ -37,12 +37,18 @@ export const allNavMagic = () => {
   const options = {
     rootMargin: "-20px",
   };
+
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
+      if (
+        !entry.isIntersecting &&
+        navLogo.getAttribute("src") === "./public/img/logo.png"
+      ) {
+        navLogo.src = "./public/img/white-logo.png";
+      }
       if (!entry.isIntersecting) {
         nav.classList.add("sticky");
         // changement de la couleur du logo
-        navLogo.src = "./public/img/white-logo.png";
 
         // loop pour chaque lien
         navLink.forEach((link) => {

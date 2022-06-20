@@ -31,6 +31,7 @@ header {
   gap: 2rem;
   align-items: center;
   text-align: center;
+  justify-content: center;
   .hero-socials-icon-container {
     display: flex;
     flex-direction: column;
@@ -96,4 +97,3 @@ header {
   color: $clr-t-secondary;
   font-size: 1.1rem;
 }
-
