@@ -1,99 +1,110 @@
-.contact-container{
-    display: grid;
-    grid-template-columns: 3fr 2fr 4fr;
-    .img-contact-left{
+.contact-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr 4fr;
+  .img-contact-left {
     background-image: url(../img/collect/one-page-img-04.jpg);
     background-size: cover;
     background-position: center left;
   }
-.information{
+  .information {
     background-color: $clr-primary;
     padding: 15rem 15rem 15rem 8rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-  .contact-form{
-    background-image: radial-gradient(rgba(65, 57, 57, 0.427), rgba(0, 0, 0, 0.8)), url(../img/fashion/fashion-brand-parallax-bg.jpg);
+  }
+  .darkest-contact {
+    background-color: $clr-last-footer;
+  }
+  .contact-form {
+    background-image: radial-gradient(
+        rgba(65, 57, 57, 0.427),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url(../img/fashion/fashion-brand-parallax-bg.jpg);
     background-size: cover;
     background-position: center;
   }
 }
 
-.information-sub{
-    display: flex;
-gap: 3rem;
-    align-items: center;
-    font-size: 1.3rem;
+.information-sub {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
-.sub-information-title{
-    color: $clr-t-primary;
-    
-    font-weight: 500;
-    padding-bottom: .5rem;
+.sub-information-title {
+  color: $clr-t-primary;
+
+  font-weight: 500;
+  padding-bottom: 0.5rem;
 }
 
-.sub-information-text{
-    color: $clr-t-secondary;
-    font-size: 1.1rem;
+.sub-information-text {
+  color: $clr-t-secondary;
+  font-size: 1.1rem;
 }
 
-.information-sub-icon{
-    font-size: 1.6rem;
-    color: $clr-t-primary;
+.information-sub-icon {
+  font-size: 1.6rem;
+  color: $clr-t-primary;
 }
 
-.contact-form{
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  form {
     display: flex;
     flex-direction: column;
-    padding: 10rem;
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        label{
-            color: $clr-t-secondary;
-
-        }
-        input[type=email], input[type=name], input[type=subject], input[type=textarea]{
-            padding: 1rem;
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid $clr-t-secondary;
-            width: 100%;
-            margin-bottom: 1rem;
-            color: $white;
-        }
-        
-input[type=submit]{
-    margin-top: 2rem;
-    border-radius: 0rem;
-    padding: 1rem 2rem;
-    font-size :1.1rem;
-
+    align-items: start;
+    label {
+      color: $clr-t-secondary;
     }
-}
+    input[type="email"],
+    input[type="name"],
+    input[type="subject"],
+    input[type="textarea"] {
+      padding: 1rem;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $clr-t-secondary;
+      width: 100%;
+      margin-bottom: 1rem;
+      color: $white;
+    }
 
-.contact-form-title{
+    input[type="submit"] {
+      margin-top: 2rem;
+      border-radius: 0rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .contact-form-title {
     color: $white;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 2rem;
-}
-}
-
-
-.instagram-div{
-    display: flex;
-    background-color: $white;
-    margin-top: 10rem;
-    margin-bottom: 15rem;
-    justify-content: center;
-    align-items: center;
-    h3{
-        font-weight: 400;
-        text-transform: uppercase;
-    }
+  }
 }
 
+.instagram-div {
+  display: flex;
+  background-color: $white;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.dark-contact {
+  background-color: $clr-footer;
+  color: $white;
+}

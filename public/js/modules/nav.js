@@ -27,26 +27,23 @@ export const allNavMagic = () => {
 
   ///////////////////////////////////////////////////////////
   // Sticky navigation
-  const nav = document.querySelector("nav");
+  const nav = document.querySelector(".nav");
   const navLogo = document.querySelector(".nav-logo");
 
   const navIcons = document.querySelectorAll(".main-nav-icon-link");
   const navLink = document.querySelectorAll(".main-nav-link");
 
-  const sectionOne = document.querySelector("header");
+  const sectionOne = document.querySelector(".header");
   const options = {
     rootMargin: "-20px",
   };
 
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
-      if (
-        !entry.isIntersecting &&
-        navLogo.getAttribute("src") === "./public/img/logo.png"
-      ) {
-        navLogo.src = "./public/img/white-logo.png";
-      }
       if (!entry.isIntersecting) {
+        console.log("hehehe");
+        navLogo.src = "./public/img/white-logo.png";
+
         nav.classList.add("sticky");
         // changement de la couleur du logo
 

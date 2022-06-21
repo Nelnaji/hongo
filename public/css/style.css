@@ -10212,87 +10212,6 @@ readers do not read off random characters that represent icons */
   display: none;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-nav {
-  border-bottom: 1px solid hsl(33deg, 11%, 81%);
-  width: 100vw;
-}
-
-.main-nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: 5%;
-  padding: 1.4rem;
-}
-.main-nav-container .main-nav-link-container {
-  display: flex;
-  gap: 2rem;
-  font-size: 1.4rem;
-}
-.main-nav-container .main-nav-link-container .main-nav-link:visited,
-.main-nav-container .main-nav-link-container .main-nav-link:link {
-  text-decoration: none;
-  color: hsl(120deg, 2%, 11%);
-  text-transform: uppercase;
-}
-.main-nav-container .main-nav-link-container .main-nav-link::after {
-  display: block;
-  content: "";
-  border-bottom: solid 1px hsl(120deg, 1%, 20%);
-  transform: scaleX(0);
-  transition: transform 150ms ease-in-out;
-}
-.main-nav-container .main-nav-link-container .main-nav-link:hover:after {
-  transform: scaleX(1);
-}
-.main-nav-container .main-nav-link-container .sticky-link:link,
-.main-nav-container .main-nav-link-container .sticky-link:visited {
-  color: hsl(0deg, 0%, 100%);
-}
-.main-nav-container .main-nav-link-container .sticky-link::after {
-  border-bottom: solid 1px hsl(0deg, 0%, 100%);
-}
-.main-nav-container .main-nav-link-container .dark-link:link,
-.main-nav-container .main-nav-link-container .dark-link:visited {
-  color: hsl(0deg, 0%, 100%);
-}
-.main-nav-container .main-nav-link-container .dark-link::after {
-  border-bottom: solid 1px hsl(0deg, 0%, 100%);
-}
-.main-nav-container .main-nav-icon-container {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.4rem;
-}
-.main-nav-container .main-nav-icon-container .main-nav-icon-link:visited,
-.main-nav-container .main-nav-icon-container .main-nav-icon-link:link {
-  color: hsl(120deg, 2%, 11%);
-}
-.main-nav-container .main-nav-icon-container .sticky-icon:visited,
-.main-nav-container .main-nav-icon-container .sticky-icon:link {
-  color: hsl(0deg, 0%, 100%);
-}
-.main-nav-container .main-nav-icon-container .dark-icon:visited,
-.main-nav-container .main-nav-icon-container .dark-icon:link {
-  color: hsl(0deg, 0%, 100%);
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  background-color: black;
-  z-index: 1000;
-  border-bottom: none;
-}
-
-.dark-nav {
-  background-color: black;
-}
-
 header {
   background-image: url(../img/collect/one-page-slider-01.jpg);
   background-size: cover;
@@ -10544,7 +10463,6 @@ header {
 .show i {
   font-size: 1.6rem;
   color: hsl(0deg, 0%, 100%);
-  cursor: pointer;
 }
 
 .name-price-container {
@@ -10692,6 +10610,9 @@ header {
   flex-direction: column;
   gap: 2rem;
 }
+.contact-container .darkest-contact {
+  background-color: hsl(120deg, 2%, 11%);
+}
 .contact-container .contact-form {
   background-image: radial-gradient(rgba(65, 57, 57, 0.427), rgba(0, 0, 0, 0.8)), url(../img/fashion/fashion-brand-parallax-bg.jpg);
   background-size: cover;
@@ -10734,7 +10655,10 @@ header {
 .contact-form form label {
   color: hsl(0deg, 0%, 64%);
 }
-.contact-form form input[type=email], .contact-form form input[type=name], .contact-form form input[type=subject], .contact-form form input[type=textarea] {
+.contact-form form input[type=email],
+.contact-form form input[type=name],
+.contact-form form input[type=subject],
+.contact-form form input[type=textarea] {
   padding: 1rem;
   background-color: transparent;
   border: none;
@@ -10767,6 +10691,11 @@ header {
 .instagram-div h3 {
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.dark-contact {
+  background-color: hsl(0deg, 0%, 15%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 footer {
@@ -10902,6 +10831,98 @@ footer {
   padding-bottom: 1rem;
 }
 
+.dark-footer {
+  background-color: hsl(120deg, 2%, 11%);
+}
+
+.darkest-footer {
+  background-color: rgb(14, 13, 13);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  border-bottom: 1px solid hsl(33deg, 11%, 81%);
+  width: 100vw;
+}
+
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 5%;
+  padding: 1.4rem;
+}
+.main-nav-container .main-nav-link-container {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+.main-nav-container .main-nav-link-container .main-nav-link:visited,
+.main-nav-container .main-nav-link-container .main-nav-link:link {
+  text-decoration: none;
+  color: hsl(120deg, 2%, 11%);
+  text-transform: uppercase;
+}
+.main-nav-container .main-nav-link-container .main-nav-link::after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px hsl(120deg, 1%, 20%);
+  transform: scaleX(0);
+  transition: transform 150ms ease-in-out;
+}
+.main-nav-container .main-nav-link-container .main-nav-link:hover:after {
+  transform: scaleX(1);
+}
+.main-nav-container .main-nav-link-container .main-nav-link:focus:after {
+  transform: scaleX(1);
+}
+.main-nav-container .main-nav-link-container .sticky-link:link,
+.main-nav-container .main-nav-link-container .sticky-link:visited {
+  color: hsl(0deg, 0%, 100%);
+}
+.main-nav-container .main-nav-link-container .sticky-link::after {
+  border-bottom: solid 1px hsl(0deg, 0%, 100%);
+}
+.main-nav-container .main-nav-link-container .dark-link:link,
+.main-nav-container .main-nav-link-container .dark-link:visited {
+  color: hsl(0deg, 0%, 100%);
+}
+.main-nav-container .main-nav-link-container .dark-link::after {
+  border-bottom: solid 1px hsl(0deg, 0%, 100%);
+}
+.main-nav-container .main-nav-icon-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+.main-nav-container .main-nav-icon-container .main-nav-icon-link:visited,
+.main-nav-container .main-nav-icon-container .main-nav-icon-link:link {
+  color: hsl(120deg, 2%, 11%);
+}
+.main-nav-container .main-nav-icon-container .sticky-icon:visited,
+.main-nav-container .main-nav-icon-container .sticky-icon:link {
+  color: hsl(0deg, 0%, 100%);
+}
+.main-nav-container .main-nav-icon-container .dark-icon:visited,
+.main-nav-container .main-nav-icon-container .dark-icon:link {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.dark-nav {
+  background-color: rgb(14, 13, 13);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: rgb(14, 13, 13);
+  z-index: 1000;
+  border-bottom: none;
+}
+
 .dark-mode-about {
   background-color: hsl(0deg, 0%, 15%);
   color: hsl(0deg, 0%, 64%);
@@ -10911,13 +10932,16 @@ footer {
   color: white;
 }
 
-.dark-mode {
-  background-color: hsl(120deg, 2%, 11%);
-  color: hsl(0deg, 0%, 100%);
+.dark {
+  background-image: radial-gradient(hsla(0deg, 0%, 0%, 0.11), hsla(0deg, 0%, 0%, 0.342)), url(../img/collect/one-page-slider-01.jpg);
 }
 
-.header-dark {
-  background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(../img/collect/one-page-slider-01.jpg);
+.dark-title {
+  color: hsl(0deg, 0%, 15%);
+}
+
+.dark-mode {
+  background-color: hsl(120deg, 2%, 11%);
   color: hsl(0deg, 0%, 100%);
 }
 

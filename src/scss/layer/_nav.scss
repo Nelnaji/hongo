@@ -44,6 +44,9 @@ nav {
     .main-nav-link:hover:after {
       transform: scaleX(1);
     }
+    .main-nav-link:focus:after {
+      transform: scaleX(1);
+    }
     .sticky-link:link,
     .sticky-link:visited {
       color: $white;
@@ -79,15 +82,14 @@ nav {
 }
 
 // sticky Navigation
+.dark-nav {
+  background-color: rgb(14, 13, 13);
+}
 
 .sticky {
   position: fixed;
   top: 0;
-  background-color: black;
+  background-color: rgb(14, 13, 13);
   z-index: 1000;
   border-bottom: none;
-}
-
-.dark-nav {
-  background-color: black;
 }

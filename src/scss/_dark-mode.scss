@@ -9,17 +9,19 @@
   color: white;
 }
 
-.dark-mode {
-  background-color: $clr-last-footer;
-  color: $white;
-}
-
-.header-dark {
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.6),
-      rgba(34, 34, 34, 0.6)
+.dark {
+  background-image: radial-gradient(
+      hsla(0, 0%, 0%, 0.11),
+      hsla(0, 0%, 0%, 0.342)
     ),
     url(../img/collect/one-page-slider-01.jpg);
+}
 
+.dark-title {
+  color: $clr-footer;
+}
+
+.dark-mode {
+  background-color: $clr-last-footer;
   color: $white;
 }
