@@ -108,6 +108,10 @@ export const createRecentProducts = () => {
   // loop qui vas ajouter chaque element.
 
   produits.forEach((element) => {
+    // span des elements de la navigation
+    const likeNumber = document.querySelector(".like-number");
+    const cartNumber = document.querySelector(".cart-number");
+
     let productCard = document.createElement("div");
     let productImg = document.createElement("img");
     let productName = document.createElement("p");
@@ -116,6 +120,8 @@ export const createRecentProducts = () => {
     let panierLikeContainer = document.createElement("div");
     let productNameContainer = document.createElement("div");
     let imageContainer = document.createElement("div");
+    let likeContainer = document.createElement("div");
+    let cartContainer = document.createElement("div");
 
     let likeBtn = document.createElement("i");
     let panierBtn = document.createElement("i");
@@ -124,9 +130,13 @@ export const createRecentProducts = () => {
     panierBtn.classList.add("fa-solid", "fa-cart-shopping");
 
     panierLikeContainer.classList.add("panier-container");
+    likeContainer.append(likeBtn);
+    cartContainer.append(panierBtn);
+    panierLikeContainer.append(cartContainer);
+    panierLikeContainer.append(likeContainer);
 
-    panierLikeContainer.append(likeBtn);
-    panierLikeContainer.append(panierBtn);
+    likeContainer.classList.add("show-btn", "btn-like");
+    cartContainer.classList.add("show-btn", "btn-cart");
 
     panierLikeContainer.classList.add("absolute-container");
     productCard.append(imageContainer);
@@ -145,6 +155,7 @@ export const createRecentProducts = () => {
     productNameContainer.classList.add("name-price-container");
     productImg.classList.add("product-card-img");
     productImg.src = element.src;
+    panierLikeContainer.classList.add("show");
 
     productName.innerText = element.nom;
     productPrice.innerText = element.prix;
@@ -152,21 +163,35 @@ export const createRecentProducts = () => {
     productPrice.prepend(productAncientPrice);
     productPrice.classList.add("product-price");
     productAncientPrice.innerText = element.ancienPrix;
-
     //mouse hover sur les cards.
     productImg.addEventListener("mouseenter", () => {
       productImg.src = element.hoverSrc;
-      panierLikeContainer.classList.add("show");
     });
 
-    productImg.addEventListener("mouseout", () => {
+    productImg.addEventListener("mouseleave", () => {
       productImg.src = element.src;
-      panierLikeContainer.classList.remove("show");
     });
 
     panierLikeContainer.addEventListener("click", (e) => {
-      const clicked = e.target.closest(".fa-solid");
-      console.log(clicked);
+      const clicked = e.target.closest(".show-btn");
+
+      // logique de clique pour changer le span dans la barre de navigation
+      if (clicked.getAttribute("class") === "show-btn btn-like") {
+        likeNumber.innerText = +likeNumber.innerText + 1;
+      } else if (clicked.getAttribute("class") === "show-btn btn-cart") {
+        cartNumber.innerText = +cartNumber.innerText + 1;
+      }
     });
+
+    // logique ^pour ajouter dynamiquement promotion
+    if (element.promo != "") {
+      const promotion = document.createElement("div");
+      const promotionContainer = document.createElement("p");
+      promotion.innerText = `-${element.promo}`;
+      promotionContainer.append(promotion);
+      imageContainer.append(promotionContainer);
+      promotionContainer.classList.add("promotion-container");
+      promotion.classList.add("promotion");
+    }
   });
 };

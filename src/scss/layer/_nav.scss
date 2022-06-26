@@ -93,3 +93,22 @@ nav {
   z-index: 1000;
   border-bottom: none;
 }
+.fa-cart-shopping,
+.fa-heart {
+  position: relative;
+}
+.cart-number,
+.like-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: absolute;
+  top: -100%;
+  right: -50%;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: rgb(82, 82, 82);
+  color: $white;
+}
