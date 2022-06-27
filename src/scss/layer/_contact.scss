@@ -5,6 +5,10 @@
     background-image: url(../img/collect/one-page-img-04.jpg);
     background-size: cover;
     background-position: center left;
+    width: 100%;
+  }
+  @include responsive(tablet-m) {
+    grid-template-columns: 1fr;
   }
   .information {
     background-color: $clr-primary;
@@ -12,6 +16,10 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @include responsive(tablet-m) {
+      align-items: center;
+      padding: 2rem;
+    }
   }
   .darkest-contact {
     background-color: $clr-last-footer;
@@ -24,6 +32,7 @@
       url(../img/fashion/fashion-brand-parallax-bg.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
 }
 

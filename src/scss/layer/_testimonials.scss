@@ -13,6 +13,10 @@
 
   /* IN THE END */
   overflow: hidden;
+  @include responsive(tablet-p) {
+    margin-inline: 5%;
+    max-width: 95%;
+  }
 }
 
 .slide {
@@ -26,6 +30,12 @@
   gap: 1rem;
   /* THIS creates the animation! */
   transition: transform 1s;
+  @include responsive(tablet-m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include responsive(tablet) {
+    grid-template-columns: 1fr;
+  }
   .testimonial-text-container {
     background-color: $white;
     padding: 3rem;

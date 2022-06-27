@@ -181,6 +181,12 @@ export const createRecentProducts = () => {
       } else if (clicked.getAttribute("class") === "show-btn btn-cart") {
         cartNumber.innerText = +cartNumber.innerText + 1;
       }
+      if (likeNumber.innerText !== "" && +likeNumber.innerText !== 0) {
+        likeNumber.classList.add("display-like");
+      }
+      if (cartNumber.innerText !== "" && +cartNumber.innerText !== 0) {
+        cartNumber.classList.add("display-cart");
+      }
     });
 
     // logique ^pour ajouter dynamiquement promotion

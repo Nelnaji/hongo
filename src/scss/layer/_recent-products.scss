@@ -4,6 +4,15 @@
   margin-inline: 5%;
   gap: 1rem;
   padding-bottom: 8rem;
+  @include responsive(tablet-m) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include responsive(tablet-m) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include responsive(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .product-card {

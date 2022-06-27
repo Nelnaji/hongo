@@ -16,12 +16,27 @@ header {
 .hero-left-container {
   margin-left: 5%;
   margin-top: 20rem;
+  @include responsive(tablet-m) {
+    margin-left: 1%;
+  }
 }
 
 .hero-carousel-container {
   margin-right: 5%;
   margin-left: auto;
   margin-top: 20rem;
+  @include responsive(tablet-p) {
+    background-image: radial-gradient(
+      rgba(78, 78, 78, 0.062),
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow: rgba(46, 42, 42, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem;
+    z-index: 300;
+  }
+  @include responsive(tablet-m) {
+    margin-right: 5%;
+  }
 }
 
 .socials-container {
@@ -58,6 +73,15 @@ header {
   font-size: 4rem;
   line-height: 3.8rem;
   color: $clr-t-primary;
+  @include responsive(tablet-p) {
+    font-size: 3.4rem;
+  }
+  @include responsive(tablet-m) {
+    font-size: 2.8rem;
+  }
+  @include responsive(tablet) {
+    font-size: 2.2rem;
+  }
 }
 
 .big-title {
@@ -68,6 +92,13 @@ header {
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
+  @include responsive(tablet-p) {
+    font-size: 16rem;
+  }
+  @include responsive(tablet) {
+    font-size: 10rem;
+    bottom: -5%;
+  }
 }
 
 .primary-heading-price {
@@ -102,6 +133,13 @@ header {
 
   /* IN THE END */
   overflow: hidden;
+  @include responsive(tablet-p) {
+    margin-left: 10rem;
+  }
+  @include responsive(tablet-m) {
+    width: 70vw;
+    margin-left: 2rem;
+  }
 }
 
 .hero-division-container {
@@ -112,6 +150,9 @@ header {
 
   /* THIS creates the animation! */
   transition: transform 1s;
+  @include responsive(tablet-m) {
+    width: 80vw;
+  }
 }
 
 .carousel-active {

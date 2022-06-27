@@ -41,7 +41,6 @@ export const allNavMagic = () => {
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
-        console.log("hehehe");
         navLogo.src = "./public/img/white-logo.png";
 
         nav.classList.add("sticky");
@@ -71,4 +70,45 @@ export const allNavMagic = () => {
   }, options);
 
   observer.observe(sectionOne);
+
+  // mobile navigation {
+  const mobileBtn = document.querySelector(".mobile-navigation-btn");
+  const mobileClose = document.querySelector(".close-mobile-nav");
+
+  const navContainer = document.querySelector(".main-nav-link-container");
+  const iconNavContainer = document.querySelector(".main-nav-icon-container");
+
+  mobileBtn.addEventListener("click", function () {
+    if (mobileClose.style.display === "none") {
+      mobileClose.style.display = "block";
+    } else mobileClose.style.display = "none";
+
+    if (mobileBtn.style.display === "flex") {
+      mobileBtn.style.display = "none";
+    } else {
+      mobileBtn.style.display = "flex";
+    }
+    iconNavContainer.classList.remove("main-nav-icon-container");
+    iconNavContainer.classList.add("main-nav-icon-mobile");
+
+    navContainer.classList.remove("main-nav-link-container");
+    navContainer.classList.add("main-nav-link-mobile");
+  });
+
+  mobileClose.addEventListener("click", function () {
+    if (mobileClose.style.display === "none") {
+      mobileClose.style.display = "block";
+    } else mobileClose.style.display = "none";
+
+    if (mobileBtn.style.display === "flex") {
+      mobileBtn.style.display = "none";
+    } else {
+      mobileBtn.style.display = "flex";
+    }
+
+    iconNavContainer.classList.add("main-nav-icon-container");
+    iconNavContainer.classList.remove("main-nav-icon-mobile");
+    navContainer.classList.add("main-nav-link-container");
+    navContainer.classList.remove("main-nav-link-mobile");
+  });
 };

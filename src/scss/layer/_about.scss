@@ -6,6 +6,16 @@
   .about-img {
     width: 100%;
   }
+  @include responsive(tablet-m) {
+    gap: 1rem;
+    margin-inline: 2.5%;
+  }
+  @include responsive(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about-titles-container {
@@ -14,6 +24,13 @@
   justify-content: space-evenly;
   font-size: 1.2rem;
   color: $clr-t-secondary;
+
+  @include responsive(tablet) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+    align-self: center;
+  }
   i {
     padding-inline: 2rem;
   }
@@ -24,12 +41,23 @@
   justify-content: center;
   gap: 2rem;
   padding: 8rem;
+  @include responsive(tablet-p) {
+    padding: 4rem;
+  }
+  @include responsive(tablet) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .about-text-subcontainer {
   display: flex;
   flex-direction: column;
   width: 40%;
+  @include responsive(tablet) {
+    width: 80%;
+  }
 }
 .about-secondary-text {
   color: $clr-t-secondary;
@@ -49,4 +77,8 @@
 
 .about-text-subcontainer-2 {
   width: 35%;
+  @include responsive(tablet) {
+    width: 70%;
+    text-align: center;
+  }
 }
