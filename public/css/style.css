@@ -11183,7 +11183,7 @@ nav {
   position: fixed;
   top: 0;
   background-color: rgb(14, 13, 13);
-  z-index: 1000;
+  z-index: 2;
   border-bottom: none;
 }
 @media (max-width: 1077px) {
@@ -11225,6 +11225,7 @@ nav {
 .mobile-navigation-btn {
   font-size: 3rem;
   display: none;
+  z-index: 10000;
 }
 @media (max-width: 1077px) {
   .mobile-navigation-btn {
@@ -11233,7 +11234,6 @@ nav {
     display: flex;
     top: 15px;
     right: 5%;
-    z-index: 100;
   }
 }
 
@@ -11244,7 +11244,7 @@ nav {
   top: 10px;
   right: 5%;
   display: none;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .main-nav-link-mobile {
@@ -11266,6 +11266,11 @@ nav {
   padding-top: 5rem;
   border-radius: 0 0 0 7rem;
   display: none;
+}
+@media (max-width: 768px) {
+  .main-nav-link-mobile {
+    width: 50vw;
+  }
 }
 @media (max-width: 1077px) {
   .main-nav-link-mobile {
@@ -11301,6 +11306,7 @@ nav {
   margin-right: 5%;
   font-size: 2.4rem;
   display: none;
+  z-index: 10000;
 }
 @media (max-width: 1077px) {
   .main-nav-icon-mobile {

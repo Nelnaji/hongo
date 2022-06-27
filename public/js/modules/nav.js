@@ -79,6 +79,7 @@ export const allNavMagic = () => {
   const iconNavContainer = document.querySelector(".main-nav-icon-container");
 
   mobileBtn.addEventListener("click", function () {
+    console.log(screen.width);
     if (mobileClose.style.display === "none") {
       mobileClose.style.display = "block";
     } else mobileClose.style.display = "none";

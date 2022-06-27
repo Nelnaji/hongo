@@ -97,7 +97,7 @@ nav {
   position: fixed;
   top: 0;
   background-color: rgb(14, 13, 13);
-  z-index: 1000;
+  z-index: 2;
   border-bottom: none;
   @include responsive(tablet-p) {
     background-color: initial;
@@ -133,13 +133,13 @@ nav {
 .mobile-navigation-btn {
   font-size: 3rem;
   display: none;
+  z-index: 10000;
   @include responsive(tablet-p) {
     cursor: pointer;
     position: absolute;
     display: flex;
     top: 15px;
     right: 5%;
-    z-index: 100;
   }
 }
 
@@ -150,7 +150,7 @@ nav {
   top: 10px;
   right: 5%;
   display: none;
-  z-index: 100;
+  z-index: 10000;
 }
 
 @include responsive(tablet-m) {
@@ -159,6 +159,9 @@ nav {
   position: absolute;
   width: 25vw;
   height: 70vh;
+  @include responsive(tablet) {
+    width: 50vw;
+  }
   top: 0;
   right: 0;
   z-index: 1000;
@@ -208,9 +211,11 @@ nav {
   margin-right: 5%;
   font-size: 2.4rem;
   display: none;
+  z-index: 10000;
   @include responsive(tablet-p) {
     display: flex;
   }
+
   .main-nav-icon-link:visited,
   .main-nav-icon-link:link {
     color: $clr-last-footer;
